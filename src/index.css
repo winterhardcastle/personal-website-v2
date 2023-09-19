@@ -15,3 +15,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  padding: 2px;
+  font-weight: 500;
+  color: #121212;
+  text-decoration: underline 0.15em #F7F7F7;
+  text-underline-offset: 0.15em;
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+  cursor: crosshair
+}
+a:hover {
+  text-decoration-color: #121212;
+  text-underline-offset: 0.3em;
+  color: #121212;
+  /* filter: drop-shadow(0 0 1em #ffffff); */
+}

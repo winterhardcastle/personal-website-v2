@@ -2,10 +2,12 @@ import './App.css';
 import React from 'react';
 import logo from './logo.svg'
 import ContactForm from './components/contact/ContactForm';
+import Navbar from './components/nav/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <ContactForm />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
