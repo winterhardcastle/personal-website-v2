@@ -2,6 +2,8 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import SendIcon from '@mui/icons-material/Send';
 import LoadingButton from "@mui/lab/LoadingButton";
+import { Button } from "@mui/material";
+import EmailIcon from '@mui/icons-material/Email';
 //import { hackerText } from "../../utils/functions";
 
 // interface Form {
@@ -41,8 +43,17 @@ const ContactForm = () => {
     }
 
     return (
-        <div id="contact" className="bg-white px-4 flex flex-col items-center">
-            {<h1 /* onMouseEnter={hackerText} */ data-value="CONTACT ME!" className="text-black font-bold md:text-5xl text-3xl pb-4 md:p-24">Contact Me</h1>}
+        <div id="contact" className="bg-white py-12 px-4 flex flex-col items-center">
+            <div className="text-orange p-12" >
+                <a href="mailto:winter@hardcastle.io">
+                    <Button color="inherit" sx={{fontFamily: "helvetica", fontWeight:"bold", cursor:"crosshair"}} variant="outlined" endIcon={<EmailIcon />}>Reach me by Email</Button>
+                </a>
+                <div className="relative flex py-12 justify-center items-center">
+                    <div className="flex-grow border-black border-t"></div>
+                    <p className="text-reseda font-bold flex-shrink mx-4">or</p>
+                    <div className="flex-grow border-black border-t"></div>
+                </div>
+            </div>
             <form onSubmit={handleSubmit} className="md:px-8 md:w-1/2 flex flex-col gap-4">
                 <div className="flex gap-4 justify-between">
                     <input 
@@ -86,7 +97,7 @@ const ContactForm = () => {
                 type="submit"
                 variant="outlined"
                 color="inherit"
-                sx={{fontFamily: "monospace", width: "175px",fontWeight:"bold", cursor:"crosshair", "&.Mui-disabled": {
+                sx={{fontFamily: "helvetica", width: "175px",fontWeight:"bold", cursor:"crosshair", "&.Mui-disabled": {
                     color: "#c0c0c0"
                   }}}
                 loading={isLoading}

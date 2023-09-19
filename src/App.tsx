@@ -3,26 +3,16 @@ import React from 'react';
 import logo from './logo.svg'
 import ContactForm from './components/contact/ContactForm';
 import Navbar from './components/nav/Navbar';
+import { hackerText } from './utils/functions'
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-white App">
       <Navbar />
       <ContactForm />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="footer" className="pt-24 px-8">
+            <p onMouseOver={hackerText} data-value="© 2023 WINTER HARDCASTLE" className="bg-white text-black text-sm font-light py-4 border-t">© 2023 WINTER HARDCASTLE</p>
+      </div>
     </div>
   );
 }
