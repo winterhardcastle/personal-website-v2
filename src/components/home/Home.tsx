@@ -1,7 +1,10 @@
+import HardwareProjects from "../projects/HardwareProjects";
 
 const Home = () => {
     return (
-        <div></div>
+        <>
+            <HardwareProjects />
+        </>
     )
 }
 
