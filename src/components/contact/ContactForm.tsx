@@ -44,13 +44,13 @@ const ContactForm = () => {
 
     return (
         <div id="contact" className="bg-white py-12 px-4 flex flex-col items-center">
-            <div className="text-orange pt-24 pb-12" >
-                <a  href="mailto:winter@hardcastle.io">
+            <div className="pt-24 pb-12" >
+                <a href="mailto:winter@hardcastle.io">
                     <Button color="inherit" sx={{fontFamily: "helvetica", fontWeight:"bold", cursor:"crosshair"}} variant="outlined" endIcon={<EmailIcon />}>Reach me by Email</Button>
                 </a>
-                <div className="relative flex pt-20 pb-12 justify-center items-center">
+                <div className=" relative flex pt-20 pb-12 justify-center items-center">
                     <div className="flex-grow border-black border-t"></div>
-                    <p className="text-reseda font-bold flex-shrink mx-4">or</p>
+                    <p className="text-black font-bold flex-shrink mx-4">or</p>
                     <div className="flex-grow border-black border-t"></div>
                 </div>
             </div>

@@ -32,7 +32,7 @@ export function Speaker(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('./gltfs/scene.gltf') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <group position={[-2.5, 0, 4]} rotation={[-1.2, .1, .5]} scale={0.003}>
+      <group position={[-1, -2, 0]} rotation={[-1.2, .1, .5]} scale={0.02}>
         <mesh geometry={nodes.Box.geometry} material={materials['ABS (White) (1)']} scale={10} />
         <mesh geometry={nodes.Logo.geometry} material={materials['Steel - Satin']} scale={10} />
         <mesh geometry={nodes.Vent_Tube.geometry} material={materials['Aluminum nitride (AlN)']} scale={10} />
@@ -41,7 +41,7 @@ export function Speaker(props: JSX.IntrinsicElements['group']) {
         <mesh geometry={nodes.Box_Top.geometry} material={materials['ABS (White) (1)']} scale={10} />
         <mesh geometry={nodes.Handle.geometry} material={materials['Titanium - Polished']} scale={10} />
       </group>
-      <pointLight intensity={0.64} decay={2} color="#fcfcfc" position={[-41.71, 20.32, 52.61]} />
+      <pointLight intensity={1} decay={2} color="#fcfcfc" position={[10,10,10]} />
     </group>
   )
 }
