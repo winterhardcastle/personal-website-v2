@@ -23,7 +23,7 @@ export function BucklingSpring(props: JSX.IntrinsicElements['group']) {
     <>
     <group {...props} dispose={null}>
       <group scale={.5}>
-        <mesh geometry={nodes.Adapter.geometry} material={materials['Plastic - Translucent Matte (White)']} position={[0,0,0]} rotation={[-1.13, 0, -.4]} scale={3} />
+        <mesh geometry={nodes.Adapter.geometry} material={materials['Plastic - Translucent Matte (White)']} position={[0,-2,0]} rotation={[-1.13, 0, -.4]} scale={3} />
       </group>
       <pointLight intensity={1} decay={2} color="#fcfcfc" position={[-12.44, 12.49, 15.73]} />
     </group>

@@ -2,12 +2,11 @@ import { useEffect, useRef, useState } from 'react'
 import { IconButton } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { BucklingSpring } from "./files/BucklingSpring";
 import { Canvas, useFrame} from "@react-three/fiber";
-import { Speaker } from "./files/Speaker";
 import {OrbitControls, PresentationControls, AccumulativeShadows, RandomizedLight, Environment} from "@react-three/drei"
+import {Speaker, BikeBrake, BucklingSpring, ElektraBoilerCap, ElektraSteamKnob, FilmCanister, Slavboard, KeyboardMounts} from './files'
 
-const models = [<Speaker />, <BucklingSpring />]
+const models = [<Speaker />, <BucklingSpring />, <BikeBrake />, <FilmCanister />, <Slavboard />, <KeyboardMounts />, <ElektraBoilerCap/>, <ElektraSteamKnob />]
 
 const HardwareProjects = () => {
     const [modelNum, setModelNum] = useState(0)
