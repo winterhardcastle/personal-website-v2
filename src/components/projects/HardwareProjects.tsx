@@ -26,14 +26,14 @@ const HardwareProjects = () => {
         }
     }   
     return (
-        <div className="flex items-center justify-center">
+        <div className="p-12 flex items-center justify-center">
         <IconButton onClick={() => {selectModel(modelNum - 1)}} size="large">
             <ArrowBackIosIcon fontSize="inherit"/>
         </IconButton>
         <div className="w-[50vw] h-[75vh]">
             <Canvas camera={{ fov: 90, near: 0.5, far: 750, position: [0, 0, 6]}}>
                 <OrbitControls enablePan= {false} enableZoom={false} />
-                <ambientLight color="BA5624" intensity={.5}/>
+                <ambientLight color="#BA5624" intensity={.5}/>
                 <Environment files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/potsdamer_platz_1k.hdr" />
                 <directionalLight position={[0, 0, 5]} intensity={1}/>
                 {models[modelNum]}
