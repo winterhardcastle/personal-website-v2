@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { IconButton } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { Canvas, useFrame} from "@react-three/fiber";
 import {OrbitControls, PresentationControls, AccumulativeShadows, RandomizedLight, Environment} from "@react-three/drei"
 import {Speaker, BikeBrake, BucklingSpring, ElektraBoilerCap, ElektraSteamKnob, FilmCanister, Slavboard, KeyboardMounts} from './files'
@@ -28,7 +28,7 @@ const HardwareProjects = () => {
     return (
         <div className="p-12 flex items-center justify-center">
         <IconButton onClick={() => {selectModel(modelNum - 1)}} size="large">
-            <ArrowBackIosIcon fontSize="inherit"/>
+            <ArrowBackIosNewIcon fontSize="inherit"/>
         </IconButton>
         <div className="w-[50vw] h-[75vh]">
             <Canvas camera={{ fov: 90, near: 0.5, far: 750, position: [0, 0, 6]}}>

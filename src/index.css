@@ -26,7 +26,7 @@ a {
   cursor: crosshair
 }
 a:hover {
-  text-decoration-color: #121212;
+  text-decoration-color: #7B7554;
   text-underline-offset: 0.3em;
   color: #121212;
   /* filter: drop-shadow(0 0 1em #ffffff); */

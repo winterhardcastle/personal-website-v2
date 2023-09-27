@@ -95,8 +95,8 @@ const ContactForm = () => {
                 <a className="pb-24">
                 <LoadingButton
                 type="submit"
-                variant="outlined"
-                color="inherit"
+                variant="contained"
+                color="primary"
                 sx={{fontFamily: "helvetica", width: "175px",fontWeight:"bold", cursor:"crosshair", "&.Mui-disabled": {
                     color: "#c0c0c0"
                   }}}
