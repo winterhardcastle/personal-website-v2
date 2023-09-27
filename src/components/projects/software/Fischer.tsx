@@ -10,15 +10,15 @@ const Fischer = () => {
         </div>
         <div className="text-black">
             <div className="py-2 flex items-bottom">
-                <h1 className="pr-2 text-4xl font-bold">Fischer</h1>
+                <h1 className="pr-2 pt-1 text-4xl font-bold">Fischer</h1>
                 <a href="https://faction-fischer.vercel.app/posts" target="_blank" rel="noopener noreferrer">
                 <IconButton color="primary" size="large">
-                    <OpenInNewIcon />
+                    <OpenInNewIcon fontSize="inherit"/>
                 </IconButton>
                 </a>
                 <a href="https://github.com/orgs/FSA2211-Team-6/repositories" target="_blank" rel="noopener noreferrer">
                 <IconButton color="primary" size="large">
-                    <GitHubIcon/>
+                    <GitHubIcon fontSize="inherit"/>
                 </IconButton>
                 </a>
             </div>

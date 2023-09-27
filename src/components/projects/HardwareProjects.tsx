@@ -27,7 +27,7 @@ const HardwareProjects = () => {
     }   
     return (
         <div className="p-12 flex items-center justify-center">
-        <IconButton onClick={() => {selectModel(modelNum - 1)}} size="large">
+        <IconButton color="primary" onClick={() => {selectModel(modelNum - 1)}} size="large">
             <ArrowBackIosNewIcon fontSize="inherit"/>
         </IconButton>
         <div className="w-[50vw] h-[75vh]">
@@ -39,7 +39,7 @@ const HardwareProjects = () => {
                 {models[modelNum]}
             </Canvas>
         </div>
-        <IconButton onClick={() => {selectModel(modelNum + 1)}} size="large">
+        <IconButton color="primary" onClick={() => {selectModel(modelNum + 1)}} size="large">
             <ArrowForwardIosIcon fontSize="inherit"/>
         </IconButton>
         </div>
