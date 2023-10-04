@@ -29,6 +29,8 @@ const SoftwareProjects = () => {
     }   
 
     return (
+        <div>
+            <h1 className="py-12 pl-[25vw] text-left text-5xl font-bold">Software Projects</h1>
             <div className="p-8 text-left flex items-center justify-center">
                 <IconButton onClick={() => {selectProj(projNum - 1)}} color="primary" size="large">
                     <ArrowBackIosNewIcon fontSize="inherit"/>
@@ -40,6 +42,7 @@ const SoftwareProjects = () => {
                     <ArrowForwardIosIcon fontSize="inherit"/>
                 </IconButton>
             </div>
+        </div>
     )
 }
 
