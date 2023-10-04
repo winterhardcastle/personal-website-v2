@@ -27,7 +27,7 @@ const HardwareProjects = () => {
     }   
     return (
         <div className='pt-48 pb-12'>
-        <h1 className="pl-[25vw] text-left text-5xl">Designs and Hardware Projects</h1>
+        <h1 className="pl-[25vw] font-bold text-left text-5xl">Designs and Hardware Projects</h1>
         <div className="p-12 flex items-center justify-center">
         <IconButton color="primary" onClick={() => {selectModel(modelNum - 1)}} size="large">
             <ArrowBackIosNewIcon fontSize="inherit"/>

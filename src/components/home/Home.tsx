@@ -1,6 +1,6 @@
 import HardwareProjects from "../projects/HardwareProjects";
 import SoftwareProjects from "../projects/SoftwareProjects";
-
+import About from "../about/About"
 const Home = () => {
     return (
         <div>
@@ -12,6 +12,7 @@ const Home = () => {
         </div>
             <SoftwareProjects />
             <HardwareProjects />
+            <About />
         </div>
     )
 }
