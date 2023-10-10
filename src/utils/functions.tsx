@@ -27,3 +27,9 @@ export const hackerText = (evt:any) => {
     iteration += 1 / 3;
   }, 30);
 }
+
+export const scrollToElement = (el:any) => {
+  const element= document.getElementById(el);
+  // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+  element ? (element.scrollIntoView({behavior: "smooth"})) : null;
+}
