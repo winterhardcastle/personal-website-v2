@@ -2,11 +2,17 @@ import { Button } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import { Link } from "react-router-dom";
 import {scrollToElement} from '../../utils/functions'
+import MobileNav from "./MobileNav";
+
 
 const Navbar = () => {
+
     return(
         <>
-        <div className='bg-white dark-bg-white select-none flex justify-center items-center'>
+        <div className="md:hidden">
+            <MobileNav />
+        </div>
+        <div className='max-md:hidden bg-white dark-bg-white select-none flex justify-center items-center'>
             <div className="p-4 flex font-semibold align-center items-center justify-center">
                 <Link to="/" className="pl-12">HOME</Link>
                 {/*eslint-disable-next-line jsx-a11y/anchor-is-valid */}
