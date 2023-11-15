@@ -10,6 +10,10 @@ module.exports = {
         reseda: "#7B7554",
         orange: "#BA5624",
       },
+      transitionProperty: {
+        height: "height",
+        spacing: "margin, padding",
+      },
     },
   },
   plugins: [],

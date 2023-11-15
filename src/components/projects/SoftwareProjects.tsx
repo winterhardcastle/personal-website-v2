@@ -30,17 +30,21 @@ const SoftwareProjects = () => {
 
     return (
         <div id="softwareprojects">
-            <h1 className="py-12 pl-[25vw] text-left text-5xl font-bold">Software Projects</h1>
-            <div className="p-8 text-left flex items-center justify-center">
-                <IconButton onClick={() => {selectProj(projNum - 1)}} color="primary" size="large">
-                    <ArrowBackIosNewIcon fontSize="inherit"/>
-                </IconButton>
-                <div className="w-[50vw] h-auto">
+            <h1 className="py-12 md:pl-[25vw] text-left text-5xl font-bold max-md:text-4xl">Software Projects</h1>
+            <div className="md:p-8 text-left flex items-center justify-center">
+                <div className="max-md:hidden">
+                    <IconButton onClick={() => {selectProj(projNum - 1)}} color="primary" size="large">
+                        <ArrowBackIosNewIcon fontSize="inherit"/>
+                    </IconButton>
+                </div>
+                <div className="md:w-[50vw] h-auto">
                     {projects[projNum]}
                 </div>
-                <IconButton onClick={() => {selectProj(projNum + 1)}} color="primary" size="large">
-                    <ArrowForwardIosIcon fontSize="inherit"/>
-                </IconButton>
+                <div className="max-md:hidden">
+                    <IconButton onClick={() => {selectProj(projNum + 1)}} color="primary" size="large">
+                        <ArrowForwardIosIcon fontSize="inherit"/>
+                    </IconButton>
+                </div>
             </div>
         </div>
     )
