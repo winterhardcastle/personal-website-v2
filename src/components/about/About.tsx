@@ -4,7 +4,7 @@ const About = () => {
             <h1 className="pb-12 md:pl-[25vw] font-bold text-left max-md:text-4xl text-5xl">About Me</h1>
             <div className="max-md:text-left flex justify-around">
                 <div className="md:w-1/2 flex gap-4 justify-left">
-                    <div className="text-left md:text-center">
+                    <div className="text-left ">
                         <p className="py-4 text-sm md:text-lg">
                         My name is Winter Hardcastle, I'm a web developer and creative who is passionate about building great software.
                         I believe creativity is the catalyst for motivational energy, and I'm constantly striving to learn new things. I’m always looking for exciting opportunities, so don’t hesitate to reach out if you want to work together!
